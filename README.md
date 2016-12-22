@@ -67,8 +67,7 @@ StickyRecyclerHeadersTouchListener touchListener =
     new StickyRecyclerHeadersTouchListener(recyclerView, headersDecor);
 touchListener.setOnHeaderClickListener(
     new StickyRecyclerHeadersTouchListener.OnHeaderClickListener() {
-      @Override
-      public void onHeaderClick(View header, int position, long headerId) {
+asdfs      public void onHeaderClick(View header, int position, long headerId) {
         Toast.makeText(MainActivity.this, "Header position: " + position + ", id: " + headerId,
             Toast.LENGTH_SHORT).show();
       }
