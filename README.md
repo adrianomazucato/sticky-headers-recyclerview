@@ -106,34 +106,3 @@ Compatibility
 API 11+
 
 Known Issues
-------------
-
-* The header views aren't recycled at this time.  Contributions are most welcome.
-
-* I haven't tested this with ItemAnimators yet.
-
-* The header views are drawn to a canvas, and are not actually a part of the view hierarchy. As such, they can't have touch states, and you may run into issues if you try to load images into them asynchronously.
-
-Version History
----------------
-0.4.3 (12/24/2015) - Change minSDK to 11, fix issue with header bounds caching
-
-0.4.2 (8/21/2015) - Add support for reverse `ReverseLayout` in `LinearLayoutManager` by [AntonPukhonin](https://github.com/AntonPukhonin)
-
-0.4.1 (6/24/2015) - Fix "dancing headers" by DarkJaguar91
-
-0.4.0 (4/16/2015) - Code reorganization by danoz73, fixes for different sized headers, performance improvements
-
-0.3.6 (1/30/2015) - Prevent header clicks from passing on the touch event
-
-0.3.5 (12/12/2014) - Add StickyRecyclerHeadersDecoration.invalidateHeaders() method
-
-0.3.4 (12/3/2014) - Fix issues with rendering of header views with header ID = 0
-
-0.3.3 (11/13/2014) - Fixes for padding, support views without headers
-
-0.3.2 (11/1/2014) - Bug fixes for list items with margins and deleting items
-
-0.2 (10/3/2014) - Add StickyRecyclerHeadersTouchListener
-
-0.1 (10/2/2014) - Initial Release
